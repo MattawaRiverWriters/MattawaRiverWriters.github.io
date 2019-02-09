@@ -1,0 +1,23 @@
+<section class="team_area p_120">
+    <div class="container">
+        <div class="main_title">
+            <h2>Meet Our Authors This Year</h2>
+            <p></p>
+        </div>
+        <div class="row team_inner">
+            {% for author in site.data.authors %}
+            <div class="col-lg-3 col-sm-6">
+                <div class="team_item">
+                    <div class="team_img">
+                        <img class="img-fluid" src="/img/authors/{{ author.image }}" alt="" />
+                    </div>
+                    <div class="team_name">
+                        <h4>{{ author.name }}</h4>
+                        <p>{{ author.brief_about }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -170,7 +170,7 @@ button:focus {
               position: absolute;
               top: 120%;
               left: 0px;
-              min-width: 200px;
+              min-width: 300px;
               text-align: left;
               opacity: 0;
               transition: all 300ms ease-in;
@@ -380,7 +380,8 @@ button:focus {
       z-index: -1;
       opacity: 1; }
     .banner_area .banner_inner .banner_content {
-      margin-top: 55px; }
+      margin-top: 55px;
+      color: #fff; }
       .banner_area .banner_inner .banner_content h2 {
         color: #fff;
         font-size: 48px;
@@ -1503,7 +1504,11 @@ button:focus {
   .element-wrap {
     margin-top: 30px; } }
 
-b, sup, sub, u, del {
+b,
+sup,
+sub,
+u,
+del {
   color: #f8b600; }
 
 h1 {
@@ -1524,7 +1529,12 @@ h5 {
 h6 {
   font-size: 14px; }
 
-.typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
   color: #777777; }
 
 .button-area .border-top-generic {
@@ -1546,7 +1556,7 @@ h6 {
   outline: none;
   line-height: 40px;
   padding: 0 30px;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   text-decoration: none;
   font-weight: 500;
@@ -1766,7 +1776,10 @@ h6 {
 .progress-table .table-head {
   display: flex; }
 
-.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
+.progress-table .table-head .serial,
+.progress-table .table-head .country,
+.progress-table .table-head .visit,
+.progress-table .table-head .percentage {
   color: #222222;
   line-height: 40px;
   text-transform: uppercase;
@@ -1777,7 +1790,10 @@ h6 {
   border-top: 1px solid #edf3fd;
   display: flex; }
 
-.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage {
+.progress-table .table-row .serial,
+.progress-table .table-row .country,
+.progress-table .table-row .visit,
+.progress-table .table-row .percentage {
   display: flex;
   align-items: center; }
 
@@ -1822,14 +1838,14 @@ h6 {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-  height: 200px;
+  height: 300px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
 
 .single-gallery-image:hover {
-  opacity: .8; }
+  opacity: 0.8; }
 
 .list-style {
   width: 14px;
@@ -2784,7 +2800,7 @@ h6 {
       bottom: -70px;
       text-align: center;
       transition: all 300ms linear 0s;
-      background: #fff; }
+      background: white; }
       .team_item .team_img .hover a {
         font-size: 14px;
         color: #dddddd;
@@ -2793,7 +2809,7 @@ h6 {
         .team_item .team_img .hover a:last-child {
           margin-right: 0px; }
         .team_item .team_img .hover a:hover i:before {
-          background: linear-gradient(to right, #2c28b1 0%, #9b5cf6 70%);
+          background: linear-gradient(to right, #298036 0%, #10375b 70%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
   .team_item .team_name {
@@ -2816,7 +2832,7 @@ h6 {
   .team_item:hover .team_img .hover {
     bottom: 0px; }
   .team_item:hover .team_name h4 {
-    background: linear-gradient(to right, #2c28b1 0%, #9b5cf6 70%);
+    background: linear-gradient(to right, #298036 0%, #10375b 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 

@@ -1,0 +1,18 @@
+- name: Joe Smith
+  brief_about: This is Joe Smith's Bio
+  about: This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography. This is the long form of the biography.
+  image: joe-smith.jpg
+  events: ["weekend-of-words-2019", "another-one"]
+- name: Joe Smith
+  brief_about: This is Joe Smith's Bio
+  about: This is the long form of the biography
+  image: joe-smith.jpg
+  events: ["weekend-of-words-2019"]
+- name: Joe Smith
+  brief_about: This is Joe Smith's Bio
+  about: This is the long form of the biography
+  image: joe-smith.jpg
+- name: Joe Smith
+  brief_about: This is Joe Smith's Bio
+  about: This is the long form of the biography
+  image: joe-smith.jpg

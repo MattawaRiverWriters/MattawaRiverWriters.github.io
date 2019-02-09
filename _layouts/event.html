@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div
+            class="overlay bg-parallax"
+            data-stellar-ratio="0.9"
+            data-stellar-vertical-offset="0"
+            data-background=""
+        ></div>
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>{{ page.title }}</h2>
+                <p>{{ page.date | date: "%B %e, %Y" }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="welcome_area pad_top pad_btm">
+    <div class="container">
+        <div class="welcome_inner row">
+            <div class="col-lg-12">
+                <div class="welcome_text">
+                    <h3>The Festival</h3>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="team_area p_120">
+    <div class="container">
+        <div class="main_title">
+            <h2>Meet Our Authors</h2>
+            <p></p>
+        </div>
+        <div class="row team_inner">
+            {% for author in site.data.authors %} {% if author.events contains page.slug %}
+            <div class="col-lg-3 col-sm-6">
+                <div class="team_item">
+                    <div class="team_img">
+                        <img class="img-fluid" src="/img/authors/{{ author.image }}" alt="" />
+                    </div>
+                    <div class="team_name">
+                        <h4>{{ author.name }}</h4>
+                        <p>{{ author.brief_about }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+</section>
