@@ -5,7 +5,7 @@
             <div class="container box_1620">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand logo_h" href="/"
-                    ><img src="img/logo.png" alt="" style="width:100px;"
+                    ><img src="/img/logo.png" alt="" style="width:100px;"
                 /></a>
                 <button
                     class="navbar-toggler"
@@ -23,6 +23,29 @@
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/authors">Authors</a></li>
+                        <li class="nav-item submenu dropdown">
+                            <a
+                                href="#"
+                                class="nav-link dropdown-toggle"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Events</a
+                            >
+                            <ul class="dropdown-menu">
+                                {% assign sorted_events = site.events | sort: "title" | reverse %}
+                                {% for event in sorted_events %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ event.url }}">{{ event.title }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
                                     <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a>
                                     <li class="nav-item submenu dropdown">
@@ -41,10 +64,16 @@
                                             <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
                                         </ul>
                                     </li> -->
-                        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item"><a target="_blank" href="https://www.canadianecology.ca/" class="tickets_btn">Get Tickets</a></li>
+                        <li class="nav-item">
+                            <a
+                                target="_blank"
+                                href="https://www.canadianecology.ca/"
+                                class="tickets_btn"
+                                >Get Tickets</a
+                            >
+                        </li>
                         <!-- <li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li> -->
                     </ul>
                 </div>

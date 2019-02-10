@@ -1,0 +1,7 @@
+name: Mattawa River Writers Festival
+future: true
+collections:
+    events:
+        output: true
+        permalink: /events/:title/
+current_event: weekend-of-words-2019

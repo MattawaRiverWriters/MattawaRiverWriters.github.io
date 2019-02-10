@@ -1,0 +1,51 @@
+---
+layout: authors
+---
+
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div
+            class="overlay bg-parallax"
+            data-stellar-ratio="0.9"
+            data-stellar-vertical-offset="0"
+            data-background=""
+        ></div>
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>Authors</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% for author in site.data.authors %}
+<section class="pad_top">
+    <div class="container">
+        <div class="welcome_inner row">
+            <div class="col-lg-3">
+                <div class="welcome_img">
+                    <img class="img-fluid" src="/img/authors/{{ author.image }}" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+                <div class="welcome_text">
+                    <h3>{{ author.name }}</h3>
+                    <p>
+                        {{ author.about }}
+                    </p>
+                    <div class="author-events">
+                        {% for participation in author.events %}
+                            {% for event in site.events %}
+                                {% if participation == event.slug %}
+                                    <a href="/events/{{ event.slug }}">{{ event.title }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+<div class="pad_top" />
