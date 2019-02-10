@@ -33,10 +33,11 @@
                                 role="button"
                                 aria-haspopup="true"
                                 aria-expanded="false"
-                                >Past Events</a
+                                >Events</a
                             >
                             <ul class="dropdown-menu">
-                                {% for event in site.events %}
+                                {% assign sorted_events = site.events | sort: "title" | reverse %}
+                                {% for event in sorted_events %}
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ event.url }}">{{ event.title }}</a>
                                 </li>

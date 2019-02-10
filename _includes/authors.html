@@ -1,11 +1,12 @@
 <section class="team_area p_120">
     <div class="container">
         <div class="main_title">
-            <h2>Meet Our Authors This Year</h2>
+            <h2>meet our writers in the woods</h2>
             <p></p>
         </div>
         <div class="row team_inner">
             {% for author in site.data.authors %}
+            {% if author.events contains site.current_event %}
             <div class="col-lg-3 col-sm-6">
                 <div class="team_item">
                     <div class="team_img">
@@ -16,7 +17,7 @@
                         <p>{{ author.brief_about }}</p>
                     </div>
                 </div>
-            </div>
+            </div> {% endif %}
             {% endfor %}
         </div>
     </div>

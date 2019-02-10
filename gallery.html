@@ -4,12 +4,7 @@ layout: default
 
 <section class="banner_area">
     <div class="banner_inner d-flex align-items-center">
-        <div
-            class="overlay bg-parallax"
-            data-stellar-ratio="0.9"
-            data-stellar-vertical-offset="0"
-            data-background=""
-        ></div>
+        <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
         <div class="container">
             <div class="banner_content text-center">
                 <h2>Gallery</h2>
@@ -22,12 +17,7 @@ layout: default
     <div class="row gallery-item">
         {% for pic in site.data.gallery %}
         <div class="col-md-4">
-            <a href="/img/gallery/{{ pic.image }}" class="img-gal"
-                ><div
-                    class="single-gallery-image"
-                    style="background: url(/img/gallery/{{ pic.image }});"
-                ></div
-            ></a>
+            <div class="single-gallery-image" style="background: url(/img/gallery/{{ pic.image }});"></div>
         </div>
         {% endfor %}
     </div>

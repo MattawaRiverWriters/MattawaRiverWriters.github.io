@@ -1837,8 +1837,8 @@ h6 {
   margin-top: 30px;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  background-size: cover !important;
-  height: 300px;
+  background-size: contain !important;
+  min-height: 300px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2477,6 +2477,18 @@ h6 {
 
 .form-select .nice-select::after {
   right: 20px; }
+
+.author-events {
+  display: flex; }
+  .author-events a {
+    color: white;
+    padding: 8px;
+    background-color: #298036;
+    border-radius: 8px;
+    margin: 8px; }
+    .author-events a:hover {
+      color: black;
+      background-color: #d0a52b; }
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/

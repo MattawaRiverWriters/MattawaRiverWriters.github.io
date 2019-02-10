@@ -33,6 +33,15 @@ layout: authors
                     <p>
                         {{ author.about }}
                     </p>
+                    <div class="author-events">
+                        {% for participation in author.events %}
+                            {% for event in site.events %}
+                                {% if participation == event.slug %}
+                                    <a href="/events/{{ event.slug }}">{{ event.title }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
