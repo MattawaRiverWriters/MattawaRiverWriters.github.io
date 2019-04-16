@@ -41,7 +41,7 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700|Roboto:300,400,500,700|Special+Elite");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .list {
@@ -67,7 +67,7 @@ body {
   color: #777777; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Heebo", sans-serif;
+  font-family: "Special Elite", cursive;
   font-weight: bold; }
 
 button:focus {
@@ -109,7 +109,7 @@ button:focus {
   text-align: center;
   margin-bottom: 75px; }
   .main_title h2 {
-    font-family: "Heebo", sans-serif;
+    font-family: "Special Elite", cursive;
     font-size: 36px;
     color: #222222;
     font-weight: bold;
@@ -298,12 +298,11 @@ button:focus {
       text-align: center; }
       .home_banner_area .banner_inner .banner_content h2 {
         margin-top: 0px;
-        font-size: 48px;
+        font-size: 64px;
         font-weight: bold;
-        font-family: "Heebo", sans-serif;
+        font-family: "Special Elite", cursive;
         line-height: 54px;
-        text-transform: uppercase;
-        margin-bottom: 15px; }
+        margin-bottom: 44px; }
       .home_banner_area .banner_inner .banner_content p {
         color: #f9f9ff;
         font-family: "Roboto", sans-serif;
@@ -385,7 +384,7 @@ button:focus {
       .banner_area .banner_inner .banner_content h2 {
         color: #fff;
         font-size: 48px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Special Elite", cursive;
         margin-bottom: 0px;
         font-weight: 500; }
       .banner_area .banner_inner .banner_content .page_link a {
@@ -2701,7 +2700,7 @@ h6 {
       .timer_inner .timer .timer__section .timer__number {
         font-size: 36px;
         color: #222222;
-        font-family: "Heebo", sans-serif;
+        font-family: "Special Elite", cursive;
         font-weight: bold; }
       .timer_inner .timer .timer__section .timer__label {
         font-size: 14px;
@@ -2733,7 +2732,7 @@ h6 {
       color: #fff;
       font-size: 16px;
       font-weight: bold;
-      font-family: "Heebo", sans-serif;
+      font-family: "Special Elite", cursive;
       text-transform: uppercase; }
       .event_schedule_inner .nav-tabs li a.active, .event_schedule_inner .nav-tabs li a:hover {
         background: #4331b0;
@@ -2754,7 +2753,7 @@ h6 {
       font-family: "Roboto", sans-serif; }
     .event_schedule_inner .tab-pane .media .media-body h4 {
       font-size: 21px;
-      font-family: "Heebo", sans-serif;
+      font-family: "Special Elite", cursive;
       font-weight: bold;
       color: #222222;
       text-transform: uppercase; }
@@ -3033,7 +3032,7 @@ h6 {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  font-family: "Heebo", sans-serif;
+  font-family: "Special Elite", cursive;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 28px; }
@@ -3045,7 +3044,7 @@ h6 {
   margin-top: 30px; }
 
 .footer-bottom {
-  padding-top: 85px; }
+  padding-top: 55px; }
   .footer-bottom .footer-text {
     color: #fff;
     opacity: 0.6; }
@@ -3056,7 +3055,10 @@ h6 {
       color: #86a3b2;
       opacity: 1; }
   .footer-bottom .footer-social {
-    text-align: right; }
+    text-align: center; }
+    .footer-bottom .footer-social div {
+      width: 100px;
+      margin: auto; }
     .footer-bottom .footer-social a {
       font-size: 14px;
       line-height: 30px;
@@ -3072,5 +3074,17 @@ h6 {
       .footer-bottom .footer-social a:hover {
         color: #fff;
         background: #86a3b2; }
+
+.footer-trees {
+  height: 12em;
+  margin-top: 40px; }
+
+@media (max-width: 1100px) {
+  .footer-trees {
+    height: 10em; } }
+
+@media (max-width: 930px) {
+  .footer-trees {
+    height: 8em; } }
 
 /*---------------------------------------------------- */
