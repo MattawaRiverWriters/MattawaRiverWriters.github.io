@@ -4,4 +4,4 @@ collections:
     events:
         output: true
         permalink: /events/:title/
-current_event: "2019"
+current_event: "2020"
